@@ -110,28 +110,5 @@
 		<footer>
 			<p>&copy; 2025 Maia the Bengal Cat. All rights reserved.</p>
 		</footer>
-		
-		<script>
-			document.querySelector('.nav-toggle').addEventListener('click', function() {
-				const navMenu = document.querySelector('.nav-menu');
-				const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-				
-				navMenu.classList.toggle('active');
-				this.classList.toggle('active');
-				this.setAttribute('aria-expanded', !expanded);
-			});
-			
-			document.addEventListener('click', function(event) {
-				const nav = document.querySelector('.main-nav');
-				const toggle = document.querySelector('.nav-toggle');
-				
-				if (!nav.contains(event.target) && !toggle.contains(event.target)) {
-					const navMenu = document.querySelector('.nav-menu');
-					navMenu.classList.remove('active');
-					toggle.classList.remove('active');
-					toggle.setAttribute('aria-expanded', 'false');
-				}
-			});
-		</script>
 	</body>
 </html>
