@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-weight: 500;
+    background-color: #F5E6C9;
+    color: #5C4B37;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: #000000;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #D68C45 0%, #5C4B37 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+header figure {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #000000;
+}
+
+header figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #F5E6C9;
+}
+
+main > section {
+    padding: 2rem;
+    border-bottom: 1px solid #D68C45;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section:last-child {
+    border-bottom: none;
+}
+
+h1, h2 {
+    color: #5C4B37;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+h1::after, h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #D68C45;
+    border-radius: 2px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+li::before {
+    content: '•';
+    color: #D68C45;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+a {
+    color: #D68C45;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #5C4B37;
+    text-decoration: underline;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 2rem 3rem;
+    }
+    
+    header h1 {
+        margin-bottom: 0;
+        flex: 1;
+    }
+    
+    header figure {
+        flex: 1;
+        margin-left: 2rem;
+    }
+    
+    
+    .two-column > section {
+        flex: 1 0 45%;
+        min-width: 300px;
+        border-bottom: none;
+        padding: 1.5rem;
+    }
+    
+    .two-column > section:nth-child(odd) {
+        border-right: 1px solid #D68C45;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+        font-size: 12pt;
+    }
+    
+    main {
+        box-shadow: none;
+        border-radius: 0;
+    }
+    
+    a {
+        color: #5C4B37;
+        text-decoration: underline;
+    }
+    
+    header {
+        background: none;
+        color: #5C4B37;
+        padding: 1rem;
+    }
+    
+    header figcaption {
+        color: #5C4B37;
+    }
+}
