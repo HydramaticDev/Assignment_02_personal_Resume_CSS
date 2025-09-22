@@ -1,12 +1,3 @@
-<!--User Story
-
-As a website visitor,
-
-I want to navigate through a clean and organized personal resume webpage,
-
-So that I can quickly find the information I'm seeking about the individual. -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -16,81 +7,116 @@ So that I can quickly find the information I'm seeking about the individual. -->
         <link rel="stylesheet" href="styles.css">
 	</head>
 
-	    <body>
-            <main>
-		<header>
-            <section>
-                <h1>Maia's Resume</h1>
-                <figure>
-                <img src="Images/Screenshot_20250831_003020_Discord2.jpg" alt="A picture of a bengal cat meowing happily" width="600">
-                <figcaption> An picture of the holder of this resume. Her name is Maia.</figcaption>
-                </figure>
-            </section>
-		</header>
+	<body>
+		<main>
+			<header>
+				<section class="header-content">
+					<h1>Maia's Resume</h1>
+					<figure>
+						<img src="Images/Screenshot_20250831_003020_Discord2.jpg" alt="A picture of a bengal cat meowing happily">
+						<figcaption> A picture of the holder of this resume. Her name is Maia.</figcaption>
+					</figure>
+				</section>
+			</header>
 
-        <section>
-            <H1> Contact Information</H1>
-            <ul>
-                <li>Personal Cell: 1-(204)-555-6242</li>
-                <li>Work Cell: 1-(204)-228-5555</li>
-                <li>Bengalady0411@meowmail.com</li>
-            </ul>
-        </section>
-        <section>
-            <h1>About Me</h1>
-            <p>I am a rare breed of cat called a Bengal. I love sunbathing and chasing bugs.</p>
-        </section>
-        <section>
-            <h1> Skills</h1>
-            <ul>
-                <Li>Pouncing</Li>
-                <Li>Chasing</Li>
-                <Li>Stalking</Li>
-                <Li>Annoying humans</Li>
-                <Li>Meowing very very loudly</Li>
-            </ul>
-        </section>
-        <section>
-            <h1> Experience</h1>
-            <ul>
-                <Li>Chasing Prey: 4+ years</Li>
-                <Li>Sunnyspot Inspector: 4+ years</Li>
-            </ul>
-        </section>
-        <section>
-            <h1> Education</h1>
-            <ul>
-                <li>Self-Taught: 3 years</li>
-            </ul>
-        </section>
-        <section>
-            <h1> Projects</h1>
-            <ul>
-                <Li>None available at the moment!</Li>
-            </ul>
-        </section>
-        <section>
-            <h1> Information about Bengals</h1>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Bengal_cat">Wikipedia Page of Bengals</a></li>
-                <li><a href="https://www.thesprucepets.com/bengal-cats-1238154">Guide to Bengals</a></li>
-            </ul>
+			<nav class="main-nav" id="mainNav">
+				<button class="nav-toggle" aria-label="Toggle navigation">
+					<span class="hamburger"></span>
+				</button>
+				<ul class="nav-menu">
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#info">Bengal Info</a></li>
+				</ul>
+			</nav>
 
-        </section>
-        <section>
-    <h2>SVG Cat</h2>
-        <svg width="200" height="200" viewBox="0 0 228.118 228.118" xmlns="http://www.w3.org/2000/svg" aria-label = "An svg image of a cat.">
-            <path d="M228.118,12.703l-68.674,13.147c-13.634-6.954-29.059-10.88-45.385-10.88c-16.326,0-31.751,3.926-45.385,10.88L0,12.703
-            l15.658,83.45c-1.191,6.167-1.822,12.531-1.822,19.04c0,55.263,44.96,100.223,100.223,100.223
-            c55.264,0,100.224-44.96,100.224-100.223c0-6.509-0.631-12.873-1.822-19.04L228.118,12.703z M134.029,175.022
-            c-7.911,0-15.038-3.259-19.977-8.675c-4.939,5.42-12.059,8.72-19.961,8.72c-14.878,0-26.982-12.362-26.982-27.362h15
-            c0,7,5.375,12.362,11.982,12.362c6.606,0,11.981-5.095,11.981-11.701l-0.107-10.694c-8.808-3.291-15.097-11.967-15.097-21.967h15
-            c0,5,3.674,8.19,8.19,8.19s8.191-3.19,8.191-8.19h15c0,10-6.288,18.674-15.096,21.966l-0.107,10.651
-            c0,6.53,5.375,11.68,11.981,11.68s11.981-5.297,11.981-12.297h15C161.01,162.705,148.907,175.022,134.029,175.022z" fill="#4a4a4a"/>
-        </svg>
-        </section>
 
-            </main>
-	    </body>
+			<div class="content-wrapper">
+				<section id="contact">
+					<h2>Contact Information</h2>
+					<ul>
+						<li>Personal Cell: 1-(204)-555-6242</li>
+						<li>Work Cell: 1-(204)-228-5555</li>
+						<li>Bengalady0411@meowmail.com</li>
+					</ul>
+				</section>
+				
+				<section id="about">
+					<h2>About Me</h2>
+					<p>I am a rare breed of cat called a Bengal. I love sunbathing and chasing bugs.</p>
+				</section>
+				
+				<section id="skills">
+					<h2>Skills</h2>
+					<ul>
+						<li>Pouncing</li>
+						<li>Chasing</li>
+						<li>Stalking</li>
+						<li>Annoying humans</li>
+						<li>Meowing very very loudly</li>
+					</ul>
+				</section>
+				
+				<section id="experience">
+					<h2>Experience</h2>
+					<ul>
+						<li>Chasing Prey: 4+ years</li>
+						<li>Sunnyspot Inspector: 4+ years</li>
+					</ul>
+				</section>
+				
+				<section id="education">
+					<h2>Education</h2>
+					<ul>
+						<li>Self-Taught: 3 years</li>
+					</ul>
+				</section>
+				
+				<section id="projects">
+					<h2>Projects</h2>
+					<ul>
+						<li>None available at the moment!</li>
+					</ul>
+				</section>
+				
+				<section id="info">
+					<h2>Information about Bengals</h2>
+					<ul>
+						<li><a href="https://en.wikipedia.org/wiki/Bengal_cat" target="_blank">Wikipedia Page of Bengals</a></li>
+						<li><a href="https://www.thesprucepets.com/bengal-cats-1238154" target="_blank">Guide to Bengals</a></li>
+					</ul>
+				</section>
+				
+				<section class="svg-section">
+					<h2>SVG Cat</h2>
+					<svg width="200" height="200" viewBox="0 0 228.118 228.118" xmlns="http://www.w3.org/2000/svg" aria-label="An svg image of a cat.">
+						<path d="M228.118,12.703l-68.674,13.147c-13.634-6.954-29.059-10.88-45.385-10.88c-16.326,0-31.751,3.926-45.385,10.88L0,12.703
+						l15.658,83.45c-1.191,6.167-1.822,12.531-1.822,19.04c0,55.263,44.96,100.223,100.223,100.223
+						c55.264,0,100.224-44.96,100.224-100.223c0-6.509-0.631-12.873-1.822-19.04L228.118,12.703z M134.029,175.022
+						c-7.911,0-15.038-3.259-19.977-8.675c-4.939,5.42-12.059,8.72-19.961,8.72c-14.878,0-26.982-12.362-26.982-27.362h15
+						c0,7,5.375,12.362,11.982,12.362c6.606,0,11.981-5.095,11.981-11.701l-0.107-10.694c-8.808-3.291-15.097-11.967-15.097-21.967h15
+						c0,5,3.674,8.19,8.19,8.19s8.191-3.19,8.191-8.19h15c0,10-6.288,18.674-15.096,21.966l-0.107,10.651
+						c0,6.53,5.375,11.68,11.981,11.68s11.981-5.297,11.981-12.297h15C161.01,162.705,148.907,175.022,134.029,175.022z" fill="#4a4a4a"/>
+					</svg>
+				</section>
+			</div>
+		</main>
+		
 
+		<footer>
+			<p>&copy; 2025 Maia the Bengal Cat. All rights reserved.</p>
+		</footer>
+		
+		<script>
+			document.querySelector('.nav-toggle').addEventListener('click', function() {
+				const navMenu = document.querySelector('.nav-menu');
+				navMenu.classList.toggle('active');
+				this.classList.toggle('active');
+			});
+		</script>
+	</body>
 </html>
