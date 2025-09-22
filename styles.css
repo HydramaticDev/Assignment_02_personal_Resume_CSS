@@ -27,13 +27,12 @@ header {
     background: linear-gradient(135deg, #D68C45 0%, #5C4B37 100%);
     color: white;
     padding: 1.5rem;
-    text-align: center;
 }
 
 .header-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
 }
 
@@ -45,7 +44,7 @@ header h1 {
 
 header figure {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 header img {
@@ -91,7 +90,7 @@ header figcaption {
 
 .nav-menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -106,8 +105,14 @@ header figcaption {
     transition: background-color 0.3s ease;
 }
 
-.nav-menu li a:hover {
+.nav-menu li a:hover, 
+.nav-menu li a:focus {
     background-color: rgba(245, 230, 201, 0.2);
+    outline: 2px solid #F5E6C9;
+}
+
+.content-wrapper {
+    display: block;
 }
 
 main > section {
@@ -165,9 +170,11 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover, a:focus {
+a:hover, 
+a:focus {
     color: #5C4B37;
     text-decoration: underline;
+    outline: 2px solid #D68C45;
 }
 
 .svg-section {
@@ -186,6 +193,33 @@ footer {
     margin-top: 2rem;
     color: #5C4B37;
     font-size: 0.9rem;
+}
+
+button:focus, 
+a:focus, 
+input:focus {
+    outline: 2px solid #D68C45;
+    outline-offset: 2px;
+}
+
+@media (prefers-contrast: high) {
+    body {
+        background-color: #FFF8E1;
+        color: #000;
+    }
+    
+    header {
+        background: linear-gradient(135deg, #B06F2E 0%, #3E2C1F 100%);
+    }
+    
+    a {
+        color: #B06F2E;
+    }
+    
+    a:hover, 
+    a:focus {
+        color: #3E2C1F;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -213,7 +247,7 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        text-align: center;
+        text-align: left;
         padding: 1rem 0;
     }
     
@@ -232,27 +266,6 @@ footer {
     
     footer {
         padding: 1rem;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    .header-content {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
-    
-    header figure {
-        max-width: 45%;
-    }
-    
-    .nav-menu {
-        gap: 0.25rem;
-    }
-    
-    .nav-menu li a {
-        padding: 0.5rem;
-        font-size: 0.9rem;
     }
 }
 
@@ -278,9 +291,6 @@ footer {
         flex: 1;
         margin-left: 2rem;
     }
-    .content-wrapper {
-        display: block;
-    }
     
     main > section {
         padding: 2rem;
@@ -292,6 +302,11 @@ footer {
         background-color: white;
         padding: 0;
         font-size: 12pt;
+    }
+    
+    .skip-link, 
+    .main-nav {
+        display: none;
     }
     
     main {
@@ -314,15 +329,17 @@ footer {
         color: #5C4B37;
     }
     
-    .main-nav {
-        display: none;
-    }
-    
     .content-wrapper {
         display: block;
     }
     
     main > section {
         page-break-inside: avoid;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        font-weight: normal;
     }
 }

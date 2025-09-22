@@ -3,41 +3,41 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Maia's Resume</title>
-        <link rel="stylesheet" href="styles.css">
+		<title>Maia's Resume - Bengal Cat</title>
+		<meta name="description" content="Professional resume for Maia, a talented Bengal cat with extensive experience in pouncing, chasing, and sunbathing.">
+		<link rel="stylesheet" href="styles.css">
 	</head>
 
-	<body>
-		<main>
+	<body>		
+		<main id="main-content">
 			<header>
 				<section class="header-content">
 					<h1>Maia's Resume</h1>
 					<figure>
-						<img src="Images/Screenshot_20250831_003020_Discord2.jpg" alt="A picture of a bengal cat meowing happily">
-						<figcaption> A picture of the holder of this resume. Her name is Maia.</figcaption>
+						<img src="Images/Screenshot_20250831_003020_Discord2.jpg" alt="A Bengal cat named Maia meowing happily with green eyes and spotted fur" width="600">
+						<figcaption>A picture of the holder of this resume. Her name is Maia.</figcaption>
 					</figure>
 				</section>
 			</header>
 
-			<nav class="main-nav" id="mainNav">
-				<button class="nav-toggle" aria-label="Toggle navigation">
+			<nav class="main-nav" aria-label="Main navigation">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
 					<span class="hamburger"></span>
 				</button>
-				<ul class="nav-menu">
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#education">Education</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#info">Bengal Info</a></li>
+				<ul class="nav-menu" id="nav-menu" role="menubar">
+					<li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+					<li role="none"><a href="#about" role="menuitem">About</a></li>
+					<li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+					<li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+					<li role="none"><a href="#education" role="menuitem">Education</a></li>
+					<li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+					<li role="none"><a href="#info" role="menuitem">Bengal Info</a></li>
 				</ul>
 			</nav>
 
-
 			<div class="content-wrapper">
-				<section id="contact">
-					<h2>Contact Information</h2>
+				<section id="contact" aria-labelledby="contact-heading">
+					<h2 id="contact-heading">Contact Information</h2>
 					<ul>
 						<li>Personal Cell: 1-(204)-555-6242</li>
 						<li>Work Cell: 1-(204)-228-5555</li>
@@ -45,13 +45,13 @@
 					</ul>
 				</section>
 				
-				<section id="about">
-					<h2>About Me</h2>
+				<section id="about" aria-labelledby="about-heading">
+					<h2 id="about-heading">About Me</h2>
 					<p>I am a rare breed of cat called a Bengal. I love sunbathing and chasing bugs.</p>
 				</section>
 				
-				<section id="skills">
-					<h2>Skills</h2>
+				<section id="skills" aria-labelledby="skills-heading">
+					<h2 id="skills-heading">Skills</h2>
 					<ul>
 						<li>Pouncing</li>
 						<li>Chasing</li>
@@ -61,39 +61,40 @@
 					</ul>
 				</section>
 				
-				<section id="experience">
-					<h2>Experience</h2>
+				<section id="experience" aria-labelledby="experience-heading">
+					<h2 id="experience-heading">Experience</h2>
 					<ul>
 						<li>Chasing Prey: 4+ years</li>
 						<li>Sunnyspot Inspector: 4+ years</li>
 					</ul>
 				</section>
 				
-				<section id="education">
-					<h2>Education</h2>
+				<section id="education" aria-labelledby="education-heading">
+					<h2 id="education-heading">Education</h2>
 					<ul>
 						<li>Self-Taught: 3 years</li>
 					</ul>
 				</section>
 				
-				<section id="projects">
-					<h2>Projects</h2>
+				<section id="projects" aria-labelledby="projects-heading">
+					<h2 id="projects-heading">Projects</h2>
 					<ul>
 						<li>None available at the moment!</li>
 					</ul>
 				</section>
 				
-				<section id="info">
-					<h2>Information about Bengals</h2>
+				<section id="info" aria-labelledby="info-heading">
+					<h2 id="info-heading">Information about Bengals</h2>
 					<ul>
-						<li><a href="https://en.wikipedia.org/wiki/Bengal_cat" target="_blank">Wikipedia Page of Bengals</a></li>
-						<li><a href="https://www.thesprucepets.com/bengal-cats-1238154" target="_blank">Guide to Bengals</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Bengal_cat" target="_blank" rel="noopener noreferrer">Wikipedia Page of Bengals</a></li>
+						<li><a href="https://www.thesprucepets.com/bengal-cats-1238154" target="_blank" rel="noopener noreferrer">Guide to Bengals</a></li>
 					</ul>
 				</section>
 				
-				<section class="svg-section">
-					<h2>SVG Cat</h2>
-					<svg width="200" height="200" viewBox="0 0 228.118 228.118" xmlns="http://www.w3.org/2000/svg" aria-label="An svg image of a cat.">
+				<section class="svg-section" aria-labelledby="svg-heading">
+					<h2 id="svg-heading">SVG Cat</h2>
+					<svg width="200" height="200" viewBox="0 0 228.118 228.118" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svg-title" role="img">
+						<title id="svg-title">An SVG image of a cat</title>
 						<path d="M228.118,12.703l-68.674,13.147c-13.634-6.954-29.059-10.88-45.385-10.88c-16.326,0-31.751,3.926-45.385,10.88L0,12.703
 						l15.658,83.45c-1.191,6.167-1.822,12.531-1.822,19.04c0,55.263,44.96,100.223,100.223,100.223
 						c55.264,0,100.224-44.96,100.224-100.223c0-6.509-0.631-12.873-1.822-19.04L228.118,12.703z M134.029,175.022
@@ -106,16 +107,30 @@
 			</div>
 		</main>
 		
-
 		<footer>
-			<p>&copy; 2025 Maia the Bengal Cat. All rights reserved.</p>
+			<p>&copy; 2023 Maia the Bengal Cat. All rights reserved.</p>
 		</footer>
 		
 		<script>
 			document.querySelector('.nav-toggle').addEventListener('click', function() {
 				const navMenu = document.querySelector('.nav-menu');
+				const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+				
 				navMenu.classList.toggle('active');
 				this.classList.toggle('active');
+				this.setAttribute('aria-expanded', !expanded);
+			});
+			
+			document.addEventListener('click', function(event) {
+				const nav = document.querySelector('.main-nav');
+				const toggle = document.querySelector('.nav-toggle');
+				
+				if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+					const navMenu = document.querySelector('.nav-menu');
+					navMenu.classList.remove('active');
+					toggle.classList.remove('active');
+					toggle.setAttribute('aria-expanded', 'false');
+				}
 			});
 		</script>
 	</body>
