@@ -250,7 +250,7 @@ input:focus {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        text-align: left;
+        text-align: center;
         padding: 2rem 3rem;
     }
     
